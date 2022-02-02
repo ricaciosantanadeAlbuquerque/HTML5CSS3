@@ -1,0 +1,47 @@
+@charset "UTF-8"; /* regra em Css para não dar erros  com acentos e acracteres especiais*/
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-image:linear-gradient(to right, #F2EA79,#F2E85E);
+    height: 100%;
+   
+}
+p{
+    text-align: justify;
+}
+main{
+    background-color: white;
+    width: 525px;
+    height:535px;
+    padding: 13%;
+    margin-bottom: 0%;
+    margin-right: 45%;
+    margin-top: 0%;
+    margin-left: 0%;
+   
+    border-radius:10px;
+    box-shadow:10px 10px 20px rgba(170, 112, 3, 0.774);
+
+}
+h1{
+    text-align: center;
+    color:#ff9205;
+    text-shadow:1px 1px 5px rgb(109, 13, 13);
+}
+ h2{
+     color:#D9D277;
+ }
+ #valor{
+    
+     box-shadow: -10px -10px 20px rgba(170, 112, 3, 0.774);
+     width: 700px;
+     height: 710px;
+    
+     margin: auto;
+     margin-top:60px;
+     margin-bottom:60px;
+     border-radius:10px;
+     padding-bottom: 0%;
+     padding-right: 0%;
+ }
