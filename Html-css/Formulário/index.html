@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulários</title>
+        
+    </head>
+    <body>
+    <div>
+        <h1> Cadastro de Devs</h1>
+        <p> complete suas informações</p>
+        <br>
+    </div>
+    <form action="page.php" method="POST">
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+            nome: <input type="text" name= nome id=nome required disabled readonly value="lucas"><br><br>
+            senha: <input type="password" name=" senha" id="senha" placeholder="Digite sua senha " maxlength="7em" ><br><br>
+            <textarea rows="10" cols="10">
+            </textarea>
+            <br><br>
+            <button disabled>Enviar</button><br><br>
+            
+        </fieldset>
+        <fieldset>
+            Hora:<input type="time" name="hora"><br><br>
+            son: <input type="range" name="Som"><br><br>
+            selecione a cor:<input type="color" name="cor">
+            <select>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="MC">MC</option>
+            </select>
+        </fieldset>
+
+    </form>
+    </body>
+</html>

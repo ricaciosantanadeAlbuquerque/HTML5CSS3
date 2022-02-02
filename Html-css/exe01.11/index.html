@@ -1,0 +1,25 @@
+<!DOCTYPE thml>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" contnet="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="leao.jpg" type="image/x-inco"/>
+        <title>Mídia em <HTML:5></title>
+    </head>
+    <body>
+        <h1>Imagem dinâmica</h1>
+        <p> Você poderá ver o ganto  se diminuir o tamanho do seu navegador!</p>
+        <picture>
+            <source media="(max-width:750px )" srcset="gato.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="onça-pintada.jpg" type="image/png">
+            <img src="leao.jpg" alt=" Imagem flexível"/>
+        </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos apreder a reproduzir áudio em HTML.</p>
+    
+    <audio preload="metadata"  autoplay controls loop>
+        <source src="mp3.mp3" type="audio/mpeg">
+    </audio>
+    </body>
+</html>

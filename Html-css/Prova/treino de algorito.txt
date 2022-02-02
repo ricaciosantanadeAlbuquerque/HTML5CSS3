@@ -1,0 +1,23 @@
+programa
+{
+	exe001(enquanto)	
+	funcao inicio()
+	{
+		/*  1 CONTRUA UM ALGORITMO QUE  CALCULE A MÉDIA ARITIMÉTICA DE( VÁRIOS VALORES INTEIROIS E POSITIVOS,)
+		 *  O FINAL DA LEITURA  DEVERÁ ACONTECER QUANBDO O VALOR INFOMADO FOR NEGATIVO
+		 *  ( utilizar o enquanto)
+		 */
+		inteiro num1=0, soma=0 , media=0
+		inteiro cont =0
+
+		enquanto(num1>=0){
+			escreva("Por favor digite um valor  numerico \n")
+			leia(num1)
+
+			soma = soma+num1
+			cont++
+		}
+		 media = soma/cont
+		 escreva("O valor da media é ",media,"\n")
+	}
+}

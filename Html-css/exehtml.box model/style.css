@@ -1,0 +1,18 @@
+@charset "UTF-8";
+#cordiv{
+    background-color: darkgray;
+    padding-bottom:40px;
+    padding-left:10px;
+
+}
+
+#cont1{
+    background-color:darkcyan;
+    color: white;
+
+}
+#branco{
+    font-size: 20px;
+    font-weight:bold;
+    text-decoration:underline;
+}

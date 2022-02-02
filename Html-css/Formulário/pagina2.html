@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulários 2</h1>
+    <form autocomplete="off" action="pagina.php" method="GET">
+        <fieldset>
+            nome: <input type="text" name="nome" id="nome" maxlength="15" required placeholder=" favor digite seu nome"><br><br>
+            Email: <input type="email" name="Email" id="Email" maxlength="25" required placeholder="Email"><br><br>
+            senha:<input type="password" name="senha" id="senha" maxlength="12" required placeholder="digite a senha"><br><br>
+            Idade: <input type="number" name="idade" id="idade" required max="100" min="0 " step="2"><br><br>
+            <label>Curso:</label> <input type="radio" name="curso" value="HTML" checked>HTML5:<br><br>
+            <label>CSS3:</label><input type="radio" name="curso" value="css">CSS3<br><br>
+            <label>javaScript</label><input type="radio" name="curso" value="javaScript"> javaScript<br><br>
+                Filmes Favoritos:<br><br>
+                <input type="checkbox" name="filme" value="O senhor dos aneis">O senhor dos aneis<br><br>
+                <input type="checkbox" name="filme" value="Harry potter">Harry potter<br><br>
+                <input type="checkbox" name="filme" value="King Kong">King Kong<br><br>
+                <input type="date"name="data"><br><br>
+                
+            <textarea rows="50" cols="100">
+            </textarea>
+                   <br><br> <button>Enviar</button>
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
