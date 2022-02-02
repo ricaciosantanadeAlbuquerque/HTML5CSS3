@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="aula.php">
+        <fieldset><legend>
+            <h2>Conta:</h2>
+            </legend>
+            <ul>
+                <li>
+                    <label for="primeiro">Primeiro Nome:</label>
+                    <input   maxlenght="30" size="30" placeholder="Digite seu primeiro nome" type="text" id="primeiro" name="primeiro_nome" class="d1"/>
+
+                </li>
+                <li>
+                    <label for="segundo">Segundo nome:</label>
+                    <input   maxlenght="30" size="30" placeholder="Digite seu Segundo nome" type="text" id="segundo" name="segundo_nome" class="d1"/> 
+                </li>
+                <li>
+                <label for="email">Email:</label>
+                <input  maxlenght="30" size="30"type="email" name="email"  class="d1" id="email" placeholder="Digite seu Email">
+                </li>
+                <li>
+                 <label for="senha_a">Digite sua senha:</label>
+                 <input  type="password" name="senha" id="senha_a" required="required" size="30" maxlenght="30">
+                </li>
+                <li>
+                    <label for="csenha">Confirmar Senha:</label>
+                    <input type="password" name="confi_senha" id="csenha" size="30" maxlenght="30">
+                </li>
+            </ul>
+            
+        </fieldset>
+        <fieldset><legend><h2>Endereço</h2></legend>
+            <ul>
+                <li>
+                    <label for="ende">Endereço:</label>
+                    <input type="text" name="endereco" size="30" maxlength="30" id="ende" required="required">
+                </li>
+                <li>
+                    <label for="city">Cidade:</label>
+                    <input type="text" name="cidade" size="30" maxlength="30" id="city" required="required">
+                </li>
+                <li>
+                    <label for="selec">Status:</label>
+                    <select  id="selec"name=" selecao">
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="NG">NG</option>
+                        <option value="CE">CE</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="texto" id="cep" s>
+                </li>
+            </ul>
+
+        </fieldset>
+        <fieldset><legend><h2>Perfil Público</h2></legend>
+            <ul>
+                <li>
+                    <label for="foto">Foto:</label>
+                    <input type="file" name="foto_foto" id="foto"><br>
+                    <label>Os arquivos aceitos sãp JPG,GIF,PNG</label><br>
+                </li>
+                <li>
+                    <label for="web">Nome do avatar ou usuário:</label>
+                    <input placeholder="O nome que será usado no perfil" type="text" name="web" id="web" size="30" maxlength="30"><br><br>
+                </li>
+                <li>
+                    <label for="bio">BIO:</label><br>
+                    <textarea cols="30" rows="10" id="bio" name="bio_bio"></textarea>
+                </li>
+                <li>
+                    <label>Sexo:</label>
+                    <input type="radio" name="sexo" value="homen" id="H" checked >
+                    <label for="H">Homen</label>
+                    <input type="radio" name="sexo" value=" mulher" id="F">
+                        <label for="F">Mulher</label>
+                
+                </li>
+                
+            </ul>
+
+         </fieldset>
+         <fieldset><legend>Dados</legend>
+            <label for="id">Receber notificações</label>
+            <input type="checkbox" name="caixa" value="S" id="id"><br>
+            <label for="di">Receber alerta</label>
+            <input type="checkbox" name="alerta" value="S" id="di">
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

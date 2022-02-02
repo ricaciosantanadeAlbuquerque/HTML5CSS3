@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+        }
+    body{
+        margin: 0px;
+       
+    }
+    .main{
+        border: 1px dotted #f00;
+        margin: auto;
+        margin-top: 0px;
+        top:0px;
+        width:960px;
+        background-color: whitesmoke;
+        
+    }
+   
+    #cabecalho{
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+        border: 1px dotted black;
+    }
+    #corpo{
+        position:absolute;
+        top:100px;
+        left:0px;
+        width:100%;
+        height: 570px;
+        border: 1px dotted black;
+    }   
+    #rodape{
+        position:absolute;
+        top:670px;
+        left:0px;
+        width:100%;
+        height: 90px;
+        background-color: black;
+        color: #ffff;
+        border: 1px dotted rgb(253, 0, 0);
+    }
+    #caixa1,#caixa2,#caixa3{
+        width:150px;
+        height: 70;
+         border: 1px solid blue;
+    }
+    #caixa1{
+     position:absolute;
+     top:0px;
+     left:0px;
+     background-color: #f00;
+     color:white;
+     
+   
+    }
+    #caixa2{
+        position: relative;
+        top:0px;
+        left:0px;
+        background-color: #0f0;
+        color:#fff;
+        
+    }
+    #caixa3{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: blue;
+    width: #ffff;
+    z-index: 100;
+    }
+    </style>
+</head>
+<body>
+
+        <div id="cabecalho" class="cabecalho1">
+         <div class="main">
+            <div>
+                <h1>CFB cursos</h1>
+            </div>
+        </div>
+    </div>
+    <div id="corpo" class="corpo1">
+        <div class="main" > <!--O main é static, por isso a caixa 1 que é absolute vai ficar fora do main porém, fica no elemento corpo que a absolute-->
+            <div>
+                <h1 id="caixa1">caixa 1</h1>
+            </div>
+            <div>
+                <h1 id="caixa2">caixa 2</h1>
+            </div>
+            <div>
+                <h1 id="caixa3">caixa 3</h1>
+            </div>
+            <P>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque necessitatibus ab unde praesentium rerum explicabo consectetur exercitationem, officiis dolores? Explicabo numquam repellat voluptatibus ab nostrum dolorem labore est itaque?
+            </P>
+        </div>
+    </div>
+    <div id="rodape" class="rodape1">
+      <div class="main" >
+            <div>
+               <p>CFB_cursos</p>
+            </div>
+    </div>
+   </div>
+</body>
+</html>

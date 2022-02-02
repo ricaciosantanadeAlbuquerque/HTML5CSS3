@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<htm lang="pt-br">
+    <head>
+        <meta Charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulários !</title>
+        <style type="text/css">
+            body{
+                background-color:#eeee;
+            }
+            label{
+                color:#606060;
+                font-weight: bold;
+
+            }
+            h3{
+                
+                border: solid 1px;
+                width:25%;
+                border-radius: 5px;
+                
+            }
+            .bt{
+                background-color:#c00000;
+                color:#ffffff;
+                width:75px;
+                height:25px;
+                cursor:pointer;
+                border-radius: 5px;
+            }
+            input:hover{
+                border: 2px solid #0000ff;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h3 style=" color:blue;">Preencha o formulário com seus dados</h3>
+        <form method="GET" name="formulário" action="aula09.php">
+
+            <label for="name">Nome:</label><br>
+            <input  id="name"type="text" name="nome" size="30" placeholder="Digite seu nome" maxlength="30"/><br/><br/>
+            <label for="senha">Senha:</label><br>
+            <input id="senha"type="password" name="senha" size="30" placeholder="Digite sua senha " maxlenght="30"><br><br>
+            <label>Qual esporte você pratica ?</label><br><br>
+            <input type="checkbox" name="futebol" value="Futebol" id="F"><label for="F">Futebol</label><n jbr>
+            <input type="checkbox" name="natacao" value="Natacao" id="N"><label for="N">Natação</label><br>
+            <input type="checkbox" name="bastaquete" value="Basquete" id="B"/><label for="B">Basquete</label><br><br>
+            <fieldset style="width:15%;"><legend>Você possui veiculo?</legend>
+                <input type="radio" name="v" value="N" id="N1"><label for="N1">Não</label><br>
+                <input type="radio" name="v" value="S" id="X"><label for="X">SIM</label><br>
+            </fieldset><br><br>
+            <label>Estado:</label>
+            <select name="estado">
+                <option value="PB">Paraíba</option>
+                <option value="NG">Natal</option>
+                <option value="PE">Pernambuco</option>
+                <option value="CE">ceará</option>
+            </select><br><br>
+            <label for="txt">Comentários</label><br>
+            <textarea id="txt"name="comentario" cols="40" rows="10"></textarea><br><br>
+            <input Style="height:20px;" class="bt" type="sbmit" value="Enviar">
+            <input type="reset" value="Limpar" class="bt">
+            <input type="button" value="Sem acao" class="bt"> <!--Necesssá  usar JS-->
+        </form>
+
+    </body>
+</htm>
